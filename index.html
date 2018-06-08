@@ -1,31 +1,15 @@
-<!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <title>Поиск Собеседника</title>
-    <link rel="stylesheet" href="/stylesheets/TwoStyle.css">
-    <script src="/javascripts/jquery.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
 
-<div class="content">
-    <h1></h1>
-    <div class="chat">
-        <div id="messages" class="messages">
+<body onload="startGame()">
+<p><button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button></p>
+<p>Use the ACCELERATE button to stay in the air</p>
+<p>How long can you stay alive?</p>
 
-        </div>
-        <div class="chatpanel">
-            <!--span.nick-->
-            <button id="start_btn" type="button">Найти собеседника</button>
-            <input id="message_text" type="text" name="message_text"/>
-            <button id="message_btn" type="button">Отправить</button>
-        </div>
-    </div>
-    <div class="settings"></div>
-</div>
-<div id="menu">
-    <div class="content"></div>
-</div>
-<script src="/javascripts/TwoChat.js"></script>
+<script src="javascripts/game.js"></script>
+
 </body>
 </html>
